@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile Bentuk Landing Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: rgb(87, 86, 86);
+        padding: 10px;
+        position: sticky;
+        top: 0;
+      }
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+      section {
+        padding: 40px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      section h2 ,section h1{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      footer{
+        text-align: center;
+        padding: 20px;
+        background: #f2f2f2;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#beranda">beranda</a>
+            <a href="#tentang">tentang</a>
+            <a href="#layanan">layanan</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+    <main>
+        <section id="beranda">
+            <h1>Beranda</h1>
+            <p>
+                Selamat datang di halaman web profilku
+            </p>
+        </section>
+        <section id="tentang">
+            <h2>Tentang</h2>
+            <p>Ini adalah bagian tentang situs contoh ini</p>
+        </section>
+        <section id="layanan">
+            <h2>Layanan</h2>
+            <p>Kami meneyediakan layanan fasilitas fotocopy</p>
+        </section>
+        <section id="galeri">
+            <h2>Galeri</h2>
+            <p>Ini adalah galeri Contoh</p>
+            <img src="" alt="">
+        </section>
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Hubungi kami di email atau telepon berikut:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quia! Odio non neque, aspernatur molestiae inventore fugit, illo vitae nihil temporibus porro, nobis molestias ducimus voluptatem quasi ipsum itaque distinctio.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; <span id="y"> </span> Situs Bookmark Sederhanan
+    </footer>
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0,0,0,0.8);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #ff3c3c;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3c3c;
+        }
+
+        section {
+            padding: 100px 50px;
+            min-height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+        }
+
+        .hero-text span {
+            color: #ff3c3c;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #ff3c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff1a1a;
+        }
+
+        .hero img {
+            width: 250px;
+            border-radius: 50%;
+            border: 5px solid #ff3c3c;
+        }
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff3c3c;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-bottom: 20px;
+            }
+        }
+
+        #tentang {
+    padding: 80px 50px;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Profilku</h2>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skill">Skill</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<!-- ini bagian beranda -->
+<section id="beranda" class="hero">
+    <div class="hero-text">
+        <h1>Halo, Saya <span> Kholil Irsyad Marwan</span></h1>
+        <h3>Web Developer</h3>
+        <p>
+            Saya seorang yang masih belajar di bidang pengembangan web.Saya berminat untuk mempelajari banyak bahasa 
+        </p>
+        <a href="#kontak" class="btn">Hubungi Saya</a>
+    </div>
+    <img src="Foto.jpg" alt="Foto Saya">
+</section>
+
+<!-- ini bagian tentang -->
+<section id="tentang">
+    <h2>Tentang Saya</h2>
+    <img src="Foto.jpg" class="fotoku" height="200px"  alt="">
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Saya memiliki minat dalam pembuatan website, desain UI/UX,
+        dan pengembangan aplikasi berbasis web. Saya terus belajar
+        untuk meningkatkan skill dan mengikuti perkembangan teknologi.
+    </p>
+</section>
+
+<!-- ini bagian skill -->
+<section id="skill">
+    <h2>Skill</h2>
+    <div class="grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">UI Design</div>
+    </div>
+</section>
+
+<!-- ini bagian kontak -->
+<section id="kontak">
+    <h2>Kontak</h2>
+    <p style="text-align:center;">
+        Email: marwansijabat@gmail.com <br>
+        No HP: 081298806030
+    </p>
+</section>
+
+<footer>
+    &copy; <span id="tahun"></span> Portfolio Saya
+</footer>
+
+<script>
+    document.getElementById("tahun").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
